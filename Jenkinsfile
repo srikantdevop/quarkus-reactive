@@ -12,6 +12,7 @@ pipeline {
         }
         stage('Build') {
             steps {
+                bat 'doctl auth init'
                 bat 'doctl registry login'
                 bat './mvnw -V clean install -DskipTests -DskipITs -DskipDocs'
             }
