@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                cmd './mvnw -V clean install -DskipTests -DskipITs -DskipDocs'
+                bat './mvnw -V clean install -DskipTests -DskipITs -DskipDocs'
             }
         }
     }
