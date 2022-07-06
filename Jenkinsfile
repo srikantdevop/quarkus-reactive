@@ -4,7 +4,6 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 checkout scm
-                sh 'ls *'
             }
         }
         stage('Build Image') {
