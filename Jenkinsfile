@@ -1,9 +1,6 @@
 pipeline {
     agent any
-    environment{
-        
-    }
-    stages {
+        stages {
         stage('Clone Repo') {
             steps {
                 checkout scm
