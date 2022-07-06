@@ -14,7 +14,7 @@ pipeline {
             steps {
                              
                              
-                              sh './mvnw -V clean install -DskipTests -DskipITs -DskipDocs'
+                              bat './mvnw -V clean install -DskipTests -DskipITs -DskipDocs'
             }
         }
         }
