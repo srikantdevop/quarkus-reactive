@@ -12,7 +12,9 @@ pipeline {
         }
         stage('Build') {
             steps {
-                              bat './mvnw -V clean install -DskipTests -DskipITs -DskipDocs'
+                             
+                             
+                              sh './mvnw -V clean install -DskipTests -DskipITs -DskipDocs'
             }
         }
         }
