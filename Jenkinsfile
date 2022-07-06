@@ -12,8 +12,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-              bat 'doctl registry login'
-                bat './mvnw -V clean install -DskipTests -DskipITs -DskipDocs'
+                              bat './mvnw -V clean install -DskipTests -DskipITs -DskipDocs'
             }
         }
         }
